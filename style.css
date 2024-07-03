@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --base: #70c2e3;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.custom-title {
+    color: var(--base);
+    text-shadow: 2px 2px 2px black;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+
+    img {
+        margin-top: 5rem;
+        width: 50%;
+        height: auto;
+        padding: var(--spacing);
+        background-color: var(--base);
+        filter: blur(var(--blur));
+    }
+}
